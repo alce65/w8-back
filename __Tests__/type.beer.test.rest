@@ -1,0 +1,25 @@
+GET http://localhost:3035/type_beers
+
+###
+
+POST http://localhost:3035/type_beers
+content-type: application/json
+
+{
+"name": "IPA",
+"description": "Muuu rica"
+}
+
+###
+
+POST http://localhost:3035/type_beers
+content-type: application/json
+
+{
+"name": "Pale Ale",
+"description": "Muuu rica también"
+}
+
+###
+
+DELETE http://localhost:3035/type_beers/619bab8ddc229b8fee986839

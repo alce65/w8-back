@@ -20,6 +20,6 @@ export async function mongoConnect() {
     const uri = `mongodb+srv://${user}:${passwd}@cluster0.dj9ya.mongodb.net/${databaseName}?retryWrites=true&w=majority`;
     return await mongoose.connect(uri);
   } catch (err) {
-    console.log('______________Error________________', err);
+    console.log('__Error__', err);
   }
 }

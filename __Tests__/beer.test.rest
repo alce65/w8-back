@@ -1,0 +1,13 @@
+GET http://localhost:3035/beers
+
+###
+
+POST http://localhost:3035/beers
+content-type: application/json
+
+{
+"name": "IPA-Pepe",
+"description": "Muy bien por Pepe",
+"typeId" : "619ba9ac71273ad9c6986a8c"
+
+}

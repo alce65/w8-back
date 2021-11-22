@@ -1,10 +1,10 @@
-import { Schema, model } from 'mongoose';
+import mongoose from 'mongoose';
 
-const beerSchema = new Schema({
+const beerSchema = new mongoose.Schema({
   name: String,
   description: String,
   type: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'TypeBeer', // nombre del Modelo
   },
 });
@@ -15,4 +15,4 @@ beerSchema.set('toJSON', {
   },
 });
 
-export const Beer = model('Beer', beerSchema);
+export const Beer = mongoose.model('Beer', beerSchema);
